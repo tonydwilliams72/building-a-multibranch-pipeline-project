@@ -12,6 +12,7 @@ pipeline {
         stage ('Build') {
             steps {
                 sh 'npm install'
+                args '-u 0:0'
             }
         }
         stage ('Test') {
